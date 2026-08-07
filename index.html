@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundational Python for AI & Data Science | Deeployed Labs™</title>
+  <meta name="description"
+    content="Beginner-friendly 12-week Python course for AI & Data Science. Learn Python fundamentals, build a strong foundation for machine learning. Free limited-time offer by Deeployed Labs™." />
+  <meta name="keywords"
+    content="Python course, AI, Data Science, Machine Learning, beginner Python, Deeployed Labs, online course" />
+  <meta name="author" content="Deeployed Labs™" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Foundational Python for AI & Data Science | Deeployed Labs™" />
+  <meta property="og:description"
+    content="Free 12-week beginner Python course. Build foundations for AI & ML. Limited seats!" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <img src="assets/images/logo-cropped.jpg" alt="Deeployed Labs Logo" class="logo-img" />
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#curriculum" class="nav-link">Curriculum</a>
+        <a href="#instructor" class="nav-link">Instructor</a>
+        <a href="#details" class="nav-link">Details</a>
+        <a href="#enroll" class="nav-link nav-cta">Enroll Now — Free</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i data-lucide="moon" id="theme-icon-moon"></i>
+          <i data-lucide="sun" id="theme-icon-sun" style="display: none;"></i>
+        </button>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.6;"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i data-lucide="sparkles" class="badge-icon"></i>
+        <span>Limited Time — 100% Free</span>
+      </div>
+      <h1 class="hero-title">
+        Foundational <span>Python</span><br />
+        for AI & Data Science
+      </h1>
+      <p class="hero-subtitle">
+        Master Python fundamentals in 12 weeks and build the foundation for your AI & Machine Learning journey.
+        Beginner-friendly, weekend classes, completely free.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Weeks</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">30</span>
+          <span class="stat-label">Seats</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">₹0</span>
+          <span class="stat-label">Cost</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">Live</span>
+          <span class="stat-label">Online</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#enroll" class="btn btn-primary" id="hero-enroll-btn">
+          <i data-lucide="rocket" class="btn-icon"></i>
+          Enroll for Free
+        </a>
+        <a href="#curriculum" class="btn btn-secondary" id="hero-curriculum-btn">
+          <i data-lucide="book-open" class="btn-icon"></i>
+          View Curriculum
+        </a>
+      </div>
+      <div class="hero-countdown">
+        <i data-lucide="calendar" class="countdown-icon"></i>
+        <span>Classes start <strong>8th August 2025</strong> — Enroll before seats fill up!</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="info" class="tag-icon"></i> About This Course</span>
+        <h2 class="section-title">Your Gateway to <span>AI & Data Science</span></h2>
+        <p class="section-subtitle">
+          A beginner-friendly course designed for entry-level students who want to start learning Python programming.
+          This course teaches the fundamentals of Python and covers essential prerequisites for intermediate-level
+          Python programming required for AI and Data Science.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="code-2" class="feature-icon"></i>
+          </div>
+          <h3>Python Fundamentals</h3>
+          <p>Master variables, data types, control flow, functions, and OOP concepts from scratch with hands-on
+            exercises.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="brain" class="feature-icon"></i>
+          </div>
+          <h3>AI-Ready Foundation</h3>
+          <p>Build the exact prerequisites needed for our connected course — AI and ML Fundamentals — where you'll code
+            your own AI models.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="users" class="feature-icon"></i>
+          </div>
+          <h3>Small Batch, Big Impact</h3>
+          <p>Only 30 students per batch ensures personalized attention. New batches open when seats fill up.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="video" class="feature-icon"></i>
+          </div>
+          <h3>Live Online Classes</h3>
+          <p>Weekend sessions on Google Meet. Saturday & Sunday 12–2 PM. Links shared via WhatsApp group.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="trending-up" class="feature-icon"></i>
+          </div>
+          <h3>Career Pathway</h3>
+          <p>Seamlessly transition to intermediate Python, then to AI/ML model development with our structured learning
+            path.</p>
+        </div>
+        <div class="feature-card" data-animate>
+          <div class="feature-icon-wrap">
+            <i data-lucide="gift" class="feature-icon"></i>
+          </div>
+          <h3>100% Free</h3>
+          <p>Originally ₹6,999 — now completely free for a limited time. No hidden charges, no catch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section class="section section-dark" id="curriculum">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="layers" class="tag-icon"></i> Curriculum</span>
+        <h2 class="section-title">12-Week <span>Learning Path</span></h2>
+        <p class="section-subtitle">A carefully structured curriculum that takes you from zero to Python-proficient,
+          ready for AI & Data Science.</p>
+      </div>
+
+      <div class="curriculum-timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>1-2</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Python Basics & Setup</h3>
+              <span class="timeline-weeks">Weeks 1–2</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Installing Python & IDE setup</li>
+              <li>Variables, data types & operators</li>
+              <li>Input/output & string formatting</li>
+              <li>Writing your first programs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>3-4</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Control Flow & Logic</h3>
+              <span class="timeline-weeks">Weeks 3–4</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Conditional statements (if/elif/else)</li>
+              <li>Loops — for & while</li>
+              <li>Nested loops & pattern programs</li>
+              <li>Logical operators & boolean logic</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>5-6</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Structures</h3>
+              <span class="timeline-weeks">Weeks 5–6</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Lists, tuples, sets & dictionaries</li>
+              <li>List comprehensions</li>
+              <li>String manipulation deep dive</li>
+              <li>Practice problems & mini projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>7-8</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Functions & Modules</h3>
+              <span class="timeline-weeks">Weeks 7–8</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Defining & calling functions</li>
+              <li>Parameters, return values & scope</li>
+              <li>Lambda functions & built-in functions</li>
+              <li>Importing & creating modules</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>9-10</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>OOP & File Handling</h3>
+              <span class="timeline-weeks">Weeks 9–10</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Classes, objects & constructors</li>
+              <li>Inheritance & polymorphism</li>
+              <li>File I/O — reading & writing files</li>
+              <li>Exception handling (try/except)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker">
+            <span>11-12</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>AI/DS Pre-requisites & Capstone</h3>
+              <span class="timeline-weeks">Weeks 11–12</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Intro to NumPy & Pandas</li>
+              <li>Basic data visualization with Matplotlib</li>
+              <li>Capstone mini project</li>
+              <li>Next steps — AI & ML Fundamentals preview</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor Section -->
+  <section class="section" id="instructor">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="graduation-cap" class="tag-icon"></i> Your Instructor</span>
+        <h2 class="section-title">Meet <span>Saptasri Ma'am</span></h2>
+      </div>
+
+      <div class="instructor-showcase">
+        <div class="instructor-image-col">
+          <div class="instructor-image-wrapper">
+            <img src="assets/images/teacher.png" alt="Saptasri Chakraborty - Course Instructor"
+              class="instructor-photo" />
+          </div>
+          <div class="instructor-quick-info">
+            <div class="quick-info-item">
+              <i data-lucide="map-pin"></i>
+              <span>Agartala, Tripura</span>
+            </div>
+            <div class="quick-info-item">
+              <i data-lucide="mail"></i>
+              <span>saptasric@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="instructor-details-col">
+          <div class="instructor-name-card">
+            <h3 class="instructor-name">Saptasri Chakraborty</h3>
+            <p class="instructor-role">B.Tech in Computer Science Engineering</p>
+            <p class="instructor-bio">
+              Motivated Computer Science engineering professional with hands-on experience in cloud technologies,
+              machine learning, IoT systems, and responsive web development. Strong analytical mindset with practical
+              exposure to AWS resources, ML model pipelines, and modern development tools.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="book-open"></i> Education
+            </h4>
+            <div class="education-list">
+              <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content">
+                  <strong>B.Tech in Computer Science Engineering</strong>
+                  <span class="edu-school">Techno College of Engineering Agartala</span>
+                  <span class="edu-year">2022–2025</span>
+                </div>
+              </div>
+              <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content">
+                  <strong>Diploma in Information Technology</strong>
+                  <span class="edu-school">Women's Polytechnic Agartala</span>
+                  <span class="edu-year">2019–2022</span>
+                </div>
+              </div>
+              <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-content">
+                  <strong>Secondary Education (Class X)</strong>
+                  <span class="edu-school">Kendriya Vidyalaya Kunjaban</span>
+                  <span class="edu-year">2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="briefcase"></i> Experience & Training
+            </h4>
+            <div class="experience-list">
+              <div class="experience-item">
+                <div class="exp-badge">Internship</div>
+                <div class="exp-content">
+                  <strong>AWS Cloud Intern — Ediglobe</strong>
+                  <span class="exp-period">Jul 2024 – Aug 2024</span>
+                  <p>Configured and managed AWS EC2, S3, IAM, VPC, RDS, and Lambda services. Improved monitoring
+                    efficiency by 20% using CloudWatch dashboards.</p>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="exp-badge">Workshop</div>
+                <div class="exp-content">
+                  <strong>IoT & ML Workshop — IIT Kharagpur</strong>
+                  <span class="exp-period">Jan 2024</span>
+                  <p>Built sensor-based IoT systems using Arduino and Raspberry Pi, incorporating ML-driven control
+                    logic.</p>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="exp-badge">Training</div>
+                <div class="exp-content">
+                  <strong>Networking Training — BSNL</strong>
+                  <span class="exp-period">Jun 2023</span>
+                  <p>Hands-on experience in LAN/WAN configuration, routing, switching, and telecom network operations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="folder-code"></i> Notable Projects
+            </h4>
+            <div class="projects-grid">
+              <div class="project-card-mini">
+                <h5>Intrusion Detection System</h5>
+                <p>Hybrid ML model using Autoencoder + SVM achieving 94% accuracy, 20% fewer false positives.</p>
+                <div class="project-tags">
+                  <span>Python</span><span>Scikit-learn</span><span>ML</span>
+                </div>
+              </div>
+              <div class="project-card-mini">
+                <h5>Tripura Tourism Website</h5>
+                <p>Responsive tourism site with 30% improved load performance through optimized media and lightweight
+                  UI.</p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="zap"></i> Technical Skills
+            </h4>
+            <div class="skills-cloud">
+              <span class="skill-tag skill-primary">Python</span>
+              <span class="skill-tag skill-primary">Machine Learning</span>
+              <span class="skill-tag skill-primary">AWS Cloud</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">HTML/CSS/JS</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">S3</span>
+              <span class="skill-tag">Lambda</span>
+              <span class="skill-tag">DSA</span>
+              <span class="skill-tag">OOP</span>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="award"></i> Certifications
+            </h4>
+            <div class="certifications-list">
+              <div class="cert-item">
+                <i data-lucide="badge-check" class="cert-icon"></i>
+                <span>AWS Cloud Computing — Ediglobe</span>
+              </div>
+              <div class="cert-item">
+                <i data-lucide="badge-check" class="cert-icon"></i>
+                <span>IoT & ML Workshop — IIT Kharagpur</span>
+              </div>
+              <div class="cert-item">
+                <i data-lucide="badge-check" class="cert-icon"></i>
+                <span>BSNL Networking Certification</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="instructor-section">
+            <h4 class="instructor-section-title">
+              <i data-lucide="globe"></i> Languages
+            </h4>
+            <div class="languages-row">
+              <div class="lang-chip">
+                <span class="lang-name">Bengali</span>
+                <span class="lang-level">Native</span>
+              </div>
+              <div class="lang-chip">
+                <span class="lang-name">Hindi</span>
+                <span class="lang-level">Fluent</span>
+              </div>
+              <div class="lang-chip">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Proficient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Details Section -->
+  <section class="section section-dark" id="details">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i data-lucide="clipboard-list" class="tag-icon"></i> Course Details</span>
+        <h2 class="section-title">Everything You <span>Need to Know</span></h2>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="calendar-days" class="detail-icon"></i>
+          </div>
+          <h3>Duration</h3>
+          <p class="detail-value">12 Weeks</p>
+          <p class="detail-desc">Comprehensive learning journey</p>
+        </div>
+
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="clock" class="detail-icon"></i>
+          </div>
+          <h3>Schedule</h3>
+          <p class="detail-value">Sat & Sun, 12–2 PM</p>
+          <p class="detail-desc">Weekend classes, 4 hrs/week</p>
+        </div>
+
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="monitor-play" class="detail-icon"></i>
+          </div>
+          <h3>Mode</h3>
+          <p class="detail-value">Live Online</p>
+          <p class="detail-desc">Google Meet • Link via WhatsApp</p>
+        </div>
+
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="users" class="detail-icon"></i>
+          </div>
+          <h3>Batch Size</h3>
+          <p class="detail-value">30 Students</p>
+          <p class="detail-desc">New batch on full capacity</p>
+        </div>
+
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="indian-rupee" class="detail-icon"></i>
+          </div>
+          <h3>Price</h3>
+          <p class="detail-value">
+            <span class="price-original">₹6,999</span>
+            <span class="price-free">FREE</span>
+          </p>
+          <p class="detail-desc">Limited time promo offer</p>
+        </div>
+
+        <div class="detail-card glass-card" data-animate>
+          <div class="detail-icon-wrap">
+            <i data-lucide="calendar-check" class="detail-icon"></i>
+          </div>
+          <h3>Start Date</h3>
+          <p class="detail-value">8th August 2025</p>
+          <p class="detail-desc">Classes begin at 12 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connected Course Teaser -->
+  <section class="section" id="next-course">
+    <div class="container">
+      <div class="next-course-card">
+        <div class="next-course-content">
+          <span class="next-course-tag">
+            <i data-lucide="arrow-right-circle" class="tag-icon"></i> Up Next
+          </span>
+          <h2 class="next-course-title">AI & ML Fundamentals</h2>
+          <p class="next-course-desc">
+            After completing this Python foundation, continue your journey with our connected course where you'll
+            actually learn to code and design your own AI models using Python. Build real machine learning pipelines,
+            train neural networks, and deploy AI solutions.
+          </p>
+          <div class="next-course-features">
+            <div class="ncf-item"><i data-lucide="check-circle-2"></i> Build Real AI Models</div>
+            <div class="ncf-item"><i data-lucide="check-circle-2"></i> Hands-on ML Projects</div>
+            <div class="ncf-item"><i data-lucide="check-circle-2"></i> Industry-Ready Skills</div>
+            <div class="ncf-item"><i data-lucide="check-circle-2"></i> Portfolio Projects</div>
+          </div>
+        </div>
+        <div class="next-course-visual">
+          <div class="orbit-container">
+            <div class="orbit-center">
+              <i data-lucide="cpu" class="orbit-center-icon"></i>
+            </div>
+            <div class="orbit orbit-1">
+              <div class="orbit-dot"><i data-lucide="code-2"></i></div>
+            </div>
+            <div class="orbit orbit-2">
+              <div class="orbit-dot"><i data-lucide="database"></i></div>
+            </div>
+            <div class="orbit orbit-3">
+              <div class="orbit-dot"><i data-lucide="brain"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrollment CTA Section -->
+  <section class="section section-cta" id="enroll">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Start Your <span>Python Journey</span>?</h2>
+          <p class="cta-subtitle">
+            Join 30 students in this exclusive free batch. Classes start <strong>8th August</strong>.
+            Don't miss this limited-time opportunity!
+          </p>
+          <div class="cta-price-block">
+            <span class="cta-price-old">₹6,999</span>
+            <span class="cta-price-arrow">→</span>
+            <span class="cta-price-new">FREE</span>
+            <span class="cta-price-badge">Limited Promo</span>
+          </div>
+          <a href="https://chat.whatsapp.com/CiVYvXFepHs8VAF383Nikj" target="_blank" class="btn btn-enroll"
+            id="enroll-btn">
+            <i data-lucide="message-circle" class="btn-icon"></i>
+            Join WhatsApp Group
+          </a>
+          <p class="cta-note">
+            <i data-lucide="shield-check" class="cta-note-icon"></i>
+            No payment required • Instant confirmation • Google Meet link shared via WhatsApp
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/images/logo-cropped.jpg" alt="Deeployed Labs" class="footer-logo" />
+          <p class="footer-tagline">Empowering the next generation of AI engineers.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Course</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#instructor">Instructor</a>
+          <a href="#details">Details</a>
+          <a href="#enroll">Enroll Now</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <a href="mailto:saptasric@gmail.com"><i data-lucide="mail"></i> saptasric@gmail.com</a>
+          <a href="tel:+918798661045"><i data-lucide="phone"></i> +91 8798661045</a>
+          <a href="https://chat.whatsapp.com/CiVYvXFepHs8VAF383Nikj" target="_blank"><i
+              data-lucide="message-circle"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Deeployed Labs™. All rights reserved. Organised and Hosted by Deeployed Labs™</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
