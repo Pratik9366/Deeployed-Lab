@@ -56,7 +56,8 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <canvas id="hero-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.6;"></canvas>
+    <canvas id="hero-canvas"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.6;"></canvas>
     <div class="hero-content">
       <div class="hero-badge">
         <i data-lucide="sparkles" class="badge-icon"></i>
@@ -180,124 +181,357 @@
     <div class="container">
       <div class="section-header">
         <span class="section-tag"><i data-lucide="layers" class="tag-icon"></i> Curriculum</span>
-        <h2 class="section-title">12-Week <span>Learning Path</span></h2>
-        <p class="section-subtitle">A carefully structured curriculum that takes you from zero to Python-proficient,
-          ready for AI & Data Science.</p>
+        <h2 class="section-title">12-Week <span>App-First Learning Path</span></h2>
+        <p class="section-subtitle">Every single week ends with a tangible mini-app or visual project you can run, screenshot, and share on WhatsApp or LinkedIn.</p>
+      </div>
+
+      <!-- Phase 1 -->
+      <div class="phase-label">
+        <span class="phase-badge">Phase 1</span>
+        <div class="phase-info">
+          <span class="phase-title">Python Core &amp; Logic</span>
+          <span class="phase-goal">Goal: Turn syntax into functional terminal tools.</span>
+        </div>
+        <span class="phase-weeks-range">Weeks 1–4</span>
       </div>
 
       <div class="curriculum-timeline">
         <div class="timeline-line"></div>
 
+        <!-- Week 1 -->
         <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>1-2</span>
-          </div>
+          <div class="timeline-marker"><span>W1</span></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Python Basics & Setup</h3>
-              <span class="timeline-weeks">Weeks 1–2</span>
+              <h3>Python Core &amp; Environment</h3>
+              <span class="timeline-weeks">Week 1</span>
             </div>
             <ul class="timeline-topics">
-              <li>Installing Python & IDE setup</li>
-              <li>Variables, data types & operators</li>
-              <li>Input/output & string formatting</li>
-              <li>Writing your first programs</li>
+              <li>Course Roadmap, IDE Setup &amp; Virtual Envs</li>
+              <li>Variables &amp; Executing First Script</li>
+              <li><span class="tools-tag">🔧 python3, venv, pip, Jupyter</span></li>
             </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Dev Suite Setup</p>
+              <p class="app-outcome-desc">Configured Jupyter environment running your first "AI Ecosystem Inspector" script.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Week 2 -->
         <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>3-4</span>
-          </div>
+          <div class="timeline-marker"><span>W2</span></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Control Flow & Logic</h3>
-              <span class="timeline-weeks">Weeks 3–4</span>
+              <h3>Logic &amp; Control Flow</h3>
+              <span class="timeline-weeks">Week 2</span>
             </div>
             <ul class="timeline-topics">
-              <li>Conditional statements (if/elif/else)</li>
-              <li>Loops — for & while</li>
-              <li>Nested loops & pattern programs</li>
-              <li>Logical operators & boolean logic</li>
+              <li>Data Types &amp; Conditional Logic (if/else)</li>
+              <li>Loops &amp; Control Flow</li>
+              <li><span class="tools-tag">🔧 Base Python</span></li>
             </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Smart Recommendation Bot</p>
+              <p class="app-outcome-desc">A CLI tool that asks user preferences and recommends movies/courses based on logic rules.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Week 3 -->
         <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>5-6</span>
-          </div>
+          <div class="timeline-marker"><span>W3</span></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Data Structures</h3>
-              <span class="timeline-weeks">Weeks 5–6</span>
+              <h3>Functions &amp; Data Structures</h3>
+              <span class="timeline-weeks">Week 3</span>
             </div>
             <ul class="timeline-topics">
-              <li>Lists, tuples, sets & dictionaries</li>
-              <li>List comprehensions</li>
-              <li>String manipulation deep dive</li>
-              <li>Practice problems & mini projects</li>
+              <li>Functions &amp; Exception Handling</li>
+              <li>Data Structures: Lists, Dicts</li>
+              <li><span class="tools-tag">🔧 Base Python, json</span></li>
             </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Student Performance Tracker</p>
+              <p class="app-outcome-desc">A CLI app that parses JSON data, calculates GPAs, and identifies at-risk students.</p>
+            </div>
           </div>
         </div>
 
+        <!-- Week 4 -->
         <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>7-8</span>
-          </div>
+          <div class="timeline-marker"><span>W4</span></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>Functions & Modules</h3>
-              <span class="timeline-weeks">Weeks 7–8</span>
+              <h3>OOP &amp; AI Pipelines</h3>
+              <span class="timeline-weeks">Week 4</span>
             </div>
             <ul class="timeline-topics">
-              <li>Defining & calling functions</li>
-              <li>Parameters, return values & scope</li>
-              <li>Lambda functions & built-in functions</li>
-              <li>Importing & creating modules</li>
+              <li>Object-Oriented Programming (OOP)</li>
+              <li>Modules for AI Pipelines</li>
+              <li><span class="tools-tag">🔧 Base Python (Classes)</span></li>
             </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>9-10</span>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>OOP & File Handling</h3>
-              <span class="timeline-weeks">Weeks 9–10</span>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Virtual Assistant State Engine</p>
+              <p class="app-outcome-desc">An OOP-based AI agent class that tracks memory, user queries, and state changes.</p>
             </div>
-            <ul class="timeline-topics">
-              <li>Classes, objects & constructors</li>
-              <li>Inheritance & polymorphism</li>
-              <li>File I/O — reading & writing files</li>
-              <li>Exception handling (try/except)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-animate>
-          <div class="timeline-marker">
-            <span>11-12</span>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>AI/DS Pre-requisites & Capstone</h3>
-              <span class="timeline-weeks">Weeks 11–12</span>
-            </div>
-            <ul class="timeline-topics">
-              <li>Intro to NumPy & Pandas</li>
-              <li>Basic data visualization with Matplotlib</li>
-              <li>Capstone mini project</li>
-              <li>Next steps — AI & ML Fundamentals preview</li>
-            </ul>
           </div>
         </div>
       </div>
+
+      <!-- Phase 2 -->
+      <div class="phase-label">
+        <span class="phase-badge">Phase 2</span>
+        <div class="phase-info">
+          <span class="phase-title">Data Wrangling &amp; Visualization</span>
+          <span class="phase-goal">Goal: Working with real datasets and creating visual insights.</span>
+        </div>
+        <span class="phase-weeks-range">Weeks 5–7</span>
+      </div>
+
+      <div class="curriculum-timeline">
+        <div class="timeline-line"></div>
+
+        <!-- Week 5 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W5</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Vectorized Computing</h3>
+              <span class="timeline-weeks">Week 5</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Vectorized Computing, Arrays &amp; Slicing</li>
+              <li>Matrix Operations on real data</li>
+              <li><span class="tools-tag">🔧 NumPy</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Image Pixel Manipulator</p>
+              <p class="app-outcome-desc">Applying NumPy matrix operations to grayscale images to create custom photo filters.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 6 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W6</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Wrangling</h3>
+              <span class="timeline-weeks">Week 6</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Data Cleaning, Filtering &amp; Grouping</li>
+              <li>Aggregation on Real Datasets</li>
+              <li><span class="tools-tag">🔧 Pandas</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">E-Commerce Data Inspector</p>
+              <p class="app-outcome-desc">A script that automatically cleans messy CSV data, fills missing values, and extracts sales trends.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 7 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W7</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Visualization</h3>
+              <span class="timeline-weeks">Week 7</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Data Visualization, Charts &amp; Heatmaps</li>
+              <li>Custom Styling on real datasets</li>
+              <li><span class="tools-tag">🔧 Matplotlib, Seaborn</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Exploratory Data Analysis (EDA) Report</p>
+              <p class="app-outcome-desc">A multi-chart visual report analyzing a trending dataset (e.g., IPL stats or Movie ratings).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3 -->
+      <div class="phase-label">
+        <span class="phase-badge">Phase 3</span>
+        <div class="phase-info">
+          <span class="phase-title">Web Apps &amp; Machine Learning</span>
+          <span class="phase-goal">Goal: Bridging data to interactive web UI and machine intelligence.</span>
+        </div>
+        <span class="phase-weeks-range">Weeks 8–11</span>
+      </div>
+
+      <div class="curriculum-timeline">
+        <div class="timeline-line"></div>
+
+        <!-- Week 8 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W8</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Building Web Apps in Python</h3>
+              <span class="timeline-weeks">Week 8</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Building Web Apps in Pure Python</li>
+              <li><em>The Retention Booster!</em> — deploy live</li>
+              <li><span class="tools-tag">🔧 Streamlit</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Interactive Data Web App</p>
+              <p class="app-outcome-desc">Turning Week 7's analysis into a live browser dashboard with interactive sliders and drop-downs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 9 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W9</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Intro to Machine Learning</h3>
+              <span class="timeline-weeks">Week 9</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>ML Intro, Feature Engineering</li>
+              <li>Linear Regression on real datasets</li>
+              <li><span class="tools-tag">🔧 Scikit-Learn</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Real Estate / Salary Predictor</p>
+              <p class="app-outcome-desc">A web app predicting house prices or salaries based on input features using a linear model.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 10 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W10</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Classification Algorithms</h3>
+              <span class="timeline-weeks">Week 10</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Logistic Regression &amp; Decision Trees</li>
+              <li>Model Evaluation metrics</li>
+              <li><span class="tools-tag">🔧 Scikit-Learn</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">AI Spam &amp; Sentiment Detector</p>
+              <p class="app-outcome-desc">An app where users type text and the AI classifies it as Spam/Ham or Positive/Negative.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 11 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W11</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Unsupervised Learning</h3>
+              <span class="timeline-weeks">Week 11</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>K-Means Clustering on real data</li>
+              <li>Model Saving &amp; deployment prep</li>
+              <li><span class="tools-tag">🔧 Scikit-Learn, joblib</span></li>
+            </ul>
+            <div class="app-outcome-card">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🚀</span>
+                <span class="app-outcome-label">App Built</span>
+              </div>
+              <p class="app-outcome-title">Customer Segmentation Tool</p>
+              <p class="app-outcome-desc">Automatically grouping customers into demographic clusters and exporting trained model files.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 4 -->
+      <div class="phase-label">
+        <span class="phase-badge phase-badge-gold">Phase 4</span>
+        <div class="phase-info">
+          <span class="phase-title">Capstone Showcase &amp; Graduation</span>
+          <span class="phase-goal">Goal: Final project polish, portfolio deployment, and certification.</span>
+        </div>
+        <span class="phase-weeks-range">Week 12</span>
+      </div>
+
+      <div class="curriculum-timeline">
+        <div class="timeline-line"></div>
+
+        <!-- Week 12 -->
+        <div class="timeline-item" data-animate>
+          <div class="timeline-marker"><span>W12</span></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Capstone &amp; Demo Day</h3>
+              <span class="timeline-weeks">Week 12</span>
+            </div>
+            <ul class="timeline-topics">
+              <li>Deployment to Streamlit Community Cloud (Free live links)</li>
+              <li>Resume section guidance for "Python for AI"</li>
+              <li>🎓 <strong>Grand Demo Day</strong> — Showcase your live web apps</li>
+            </ul>
+            <div class="app-outcome-card app-outcome-capstone">
+              <div class="app-outcome-header">
+                <span class="app-outcome-icon">🏆</span>
+                <span class="app-outcome-label">Capstone App</span>
+              </div>
+              <p class="app-outcome-title">Portfolio Web App</p>
+              <p class="app-outcome-desc">Deploy your final AI or Data project to the web and showcase it live in front of the class on Demo Day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
+
 
   <!-- Instructor Section -->
   <section class="section" id="instructor">
