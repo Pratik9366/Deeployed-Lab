@@ -42,10 +42,10 @@
         <a href="#curriculum" class="nav-link">Curriculum</a>
         <a href="#instructor" class="nav-link">Instructor</a>
         <a href="#details" class="nav-link">Details</a>
-        <a href="#enroll" class="nav-link nav-cta">Enroll Now — Free</a>
+        <a href="#enroll" class="nav-link nav-cta">Free-Batch Registration Closed</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
           <i data-lucide="moon" id="theme-icon-moon"></i>
-          <i data-lucide="sun" id="theme-icon-sun" style="display: none;"></i>
+          <i data-lucide="sun" id="theme-icon-sun"></i>
         </button>
       </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
@@ -56,55 +56,46 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <canvas id="hero-canvas"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.6;"></canvas>
+    <canvas id="hero-canvas"></canvas>
     <div class="hero-content">
-      <div class="hero-badge">
-        <i data-lucide="sparkles" class="badge-icon"></i>
-        <span>Limited Time — 100% Free</span>
+      <div class="hero-badge hero-badge-closed">
+        <i data-lucide="alert-circle" class="badge-icon"></i>
+        <span>Registration Closed</span>
       </div>
       <h1 class="hero-title">
         Foundational <span>Python</span><br />
         for AI & Data Science
       </h1>
       <p class="hero-subtitle">
-        Master Python fundamentals in 12 weeks and build the foundation for your AI & Machine Learning journey.
-        Beginner-friendly, weekend classes, completely free.
+        The registration period for this free batch has ended. Thank you to everyone who registered. Further registrations will be handled through a separate paid batch.
       </p>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-number">12</span>
           <span class="stat-label">Weeks</span>
         </div>
-        <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="stat-number">30</span>
-          <span class="stat-label">Seats</span>
+          <span class="stat-number">Closed</span>
+          <span class="stat-label">Registration</span>
         </div>
-        <!-- <div class="stat-divider"></div> -->
-        <!-- <div class="stat-item">
-          <span class="stat-number">₹0</span>
-          <span class="stat-label">Cost</span>
-        </div> -->
-        <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="stat-number">Live</span>
           <span class="stat-label">Online</span>
         </div>
       </div>
       <div class="hero-actions">
-        <a href="#enroll" class="btn btn-primary" id="hero-enroll-btn">
-          <i data-lucide="rocket" class="btn-icon"></i>
-          Enroll for Free
-        </a>
+        <button class="btn btn-primary" id="hero-enroll-btn" disabled>
+          <i data-lucide="lock" class="btn-icon"></i>
+          Registration Closed
+        </button>
         <a href="#curriculum" class="btn btn-secondary" id="hero-curriculum-btn">
           <i data-lucide="book-open" class="btn-icon"></i>
           View Curriculum
         </a>
       </div>
       <div class="hero-countdown">
-        <i data-lucide="calendar" class="countdown-icon"></i>
-        <span>Classes start <strong>8th August 2025</strong> — Enroll before seats fill up!</span>
+        <i data-lucide="info" class="countdown-icon"></i>
+        <span>Free-batch registration is now closed</span>
       </div>
     </div>
     <div class="hero-scroll-indicator">
@@ -167,10 +158,10 @@
         </div>
         <div class="feature-card" data-animate>
           <div class="feature-icon-wrap">
-            <i data-lucide="gift" class="feature-icon"></i>
+            <i data-lucide="info" class="feature-icon"></i>
           </div>
-          <h3>100% Free</h3>
-          <p>Originally ₹6,999 — now completely free for a limited time. No hidden charges, no catch.</p>
+          <h3>Status</h3>
+          <p>Free batch registration has ended. Thank you for the overwhelming response.</p>
         </div>
       </div>
     </div>
@@ -798,10 +789,9 @@
           </div>
           <h3>Price</h3>
           <p class="detail-value">
-            <span class="price-original">₹6,999</span>
-            <span class="price-free">FREE</span>
+            <span class="price-free price-closed">Closed</span>
           </p>
-          <p class="detail-desc">Limited time promo offer</p>
+          <p class="detail-desc">Free batch registration has ended</p>
         </div>
 
         <div class="detail-card glass-card" data-animate>
@@ -862,26 +852,61 @@
     <div class="container">
       <div class="cta-card">
         <div class="cta-content">
-          <h2 class="cta-title">Ready to Start Your <span>Python Journey</span>?</h2>
-          <p class="cta-subtitle">
-            Join 30 students in this exclusive free batch. Classes start <strong>8th August</strong>.
-            Don't miss this limited-time opportunity!
-          </p>
-          <div class="cta-price-block">
-            <span class="cta-price-old">₹6,999</span>
-            <span class="cta-price-arrow">→</span>
-            <span class="cta-price-new">FREE</span>
-            <span class="cta-price-badge">Limited Promo</span>
+          <div class="hero-badge wishlist-badge">
+            <i data-lucide="info" class="badge-icon"></i>
+            <span>Free-Batch Closed — Next Cohort Wishlist Open</span>
           </div>
-          <a href="https://chat.whatsapp.com/CiVYvXFepHs8VAF383Nikj" target="_blank" class="btn btn-enroll"
-            id="enroll-btn">
-            <i data-lucide="message-circle" class="btn-icon"></i>
-            Join WhatsApp Group
-          </a>
-          <p class="cta-note">
-            <i data-lucide="shield-check" class="cta-note-icon"></i>
-            No payment required • Instant confirmation • Google Meet link shared via WhatsApp
+          
+          <h2 class="cta-title">Don't Miss the <span>Next Free Cohort</span></h2>
+          
+          <p class="cta-subtitle wishlist-subtitle">
+            Foundational Python is the first step toward building your own AI models. This beginner-friendly course covers everything you need before moving into our connected course, <strong>AI & ML Fundamentals</strong> — where you'll actually code and design AI models using Python. Join the wishlist now and be the first to know when registration reopens.
           </p>
+          
+          <div class="cta-details-grid wishlist-details-grid">
+            <div class="detail-item wishlist-detail-item">
+              <i data-lucide="calendar-days" class="wishlist-detail-icon"></i>
+              <div class="wishlist-detail-value">12 Weeks</div>
+              <div class="wishlist-detail-label">Duration</div>
+            </div>
+            <div class="detail-item wishlist-detail-item">
+              <i data-lucide="clock" class="wishlist-detail-icon"></i>
+              <div class="wishlist-detail-value">Sat & Sun, 12–2 PM</div>
+              <div class="wishlist-detail-label">Schedule</div>
+            </div>
+            <div class="detail-item wishlist-detail-item">
+              <i data-lucide="monitor-play" class="wishlist-detail-icon"></i>
+              <div class="wishlist-detail-value">Online (Google Meet)</div>
+              <div class="wishlist-detail-label">Mode</div>
+            </div>
+            <div class="detail-item wishlist-detail-item">
+              <i data-lucide="graduation-cap" class="wishlist-detail-icon"></i>
+              <div class="wishlist-detail-value">Saptasri Ma'am</div>
+              <div class="wishlist-detail-label">Instructor</div>
+            </div>
+          </div>
+
+          <a href="https://forms.gle/RQxXJRaQbH6npTZW7" target="_blank" class="btn btn-enroll wishlist-btn"
+            id="enroll-btn">
+            <i data-lucide="list-plus" class="btn-icon"></i>
+            Join the Wishlist
+          </a>
+          
+          <div class="wishlist-fineprint-container">
+            <p class="wishlist-fineprint-text">
+              You'll be notified via Email and WhatsApp DM the moment registration reopens.
+            </p>
+            <div class="wishlist-social-proof">
+              <i data-lucide="users" class="wishlist-social-icon"></i>
+              <span class="wishlist-social-text">37 students already joined the wishlist</span>
+            </div>
+          </div>
+          
+          <div class="wishlist-trust-line">
+            <i data-lucide="shield-check" class="wishlist-trust-icon"></i>
+            Organised & Hosted by <span class="wishlist-trust-strong">Deeployed Labs™</span> <span class="wishlist-trust-dot">·</span> Powered by <span class="wishlist-trust-strong">Jobs For Tripura</span>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -901,7 +926,7 @@
           <a href="#curriculum">Curriculum</a>
           <a href="#instructor">Instructor</a>
           <a href="#details">Details</a>
-          <a href="#enroll">Enroll Now</a>
+          <a href="#enroll">Join Wishlist</a>
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
