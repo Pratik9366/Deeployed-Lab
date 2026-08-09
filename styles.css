@@ -2072,7 +2072,7 @@ ul {
   }
 
   .hero-content {
-    padding: 80px 16px 40px;
+    padding: 80px 16px 72px;
   }
 
   .hero-badge {
@@ -2109,10 +2109,17 @@ ul {
 
   .hero-countdown {
     font-size: 0.8rem;
+    margin-bottom: 0;
   }
 
   .hero-scroll-indicator {
     display: none;
+  }
+
+  /* Clear break before About */
+  #about {
+    margin-top: 28px;
+    padding-top: 24px;
   }
 
   /* ---- Wishlist CTA Card ---- */
