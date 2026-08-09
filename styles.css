@@ -87,7 +87,7 @@
 *,
 *::before,
 *::after {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -1869,9 +1869,9 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .hero-title {
+  /* .hero-title {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -2087,9 +2087,9 @@ ul {
   }
 
   .hero-title {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     line-height: 1.25;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
   }
 
   .hero-subtitle {
