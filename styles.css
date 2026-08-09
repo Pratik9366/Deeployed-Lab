@@ -1966,7 +1966,7 @@ ul {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.25rem;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .wishlist-detail-icon {
@@ -2060,19 +2060,20 @@ ul {
 @media (max-width: 640px) {
 
   /* ---- Layout & Container ---- */
-  .hero-content, .container {
+  .hero-content,
+  .container {
     max-width: 100%;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   /* ---- Hero Section ---- */
-  .hero {
+  /* .hero {
     min-height: auto;
-  }
+  } */
 
   .hero-content {
-    padding: 80px 16px 72px;
+    padding: 140px 16px 72px;
   }
 
   .hero-badge {
@@ -2095,7 +2096,6 @@ ul {
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 16px;
-    text-align: left;
   }
 
   /* Hide stats on mobile for a cleaner flow */
@@ -2118,8 +2118,9 @@ ul {
 
   /* Clear break before About */
   #about {
-    margin-top: 28px;
-    padding-top: 24px;
+    margin-top: 32px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   /* ---- Wishlist CTA Card ---- */
